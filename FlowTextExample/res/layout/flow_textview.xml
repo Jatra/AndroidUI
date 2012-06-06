@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <uk.co.jatra.android.flowtext.FlowTextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/seagull"
+        continuationView="@+id/tv2"
+        android:maxLines="2"
+        android:paddingTop="7dip"
+        android:textSize="20sp" 
+        android:text="@string/long_string"/>
+
+    <uk.co.jatra.android.flowtext.FlowTextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        continuationView="@+id/tv3"
+        android:maxLines="2"
+        android:paddingBottom="5dip"
+        android:textSize="20sp" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/amex"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+    />
+    <uk.co.jatra.android.flowtext.FlowTextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minLines="20"
+        android:paddingBottom="5dip"
+        android:paddingTop="7dip"
+        android:textSize="14sp" />
+
+</LinearLayout>
+</ScrollView>
