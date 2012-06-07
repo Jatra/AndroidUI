@@ -100,7 +100,7 @@ public class FlowTextView extends TextView {
      * Specify the TextView to flow text into.
      * If the text will not fit into this view, the overflow text
      * will be set as the text of the continuation view.
-     * Multiple InqTextViews can be chained in this manner. 
+     * Multiple FlowTextViews can be chained in this manner. 
      * @param tv the continuation view
      */
     public void setContinuationView(View view) {

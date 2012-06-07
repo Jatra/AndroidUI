@@ -16,6 +16,7 @@
         android:maxLines="2"
         android:paddingTop="7dip"
         android:textSize="20sp" 
+        android:textStyle="italic"
         android:text="@string/long_string"/>
 
     <uk.co.jatra.android.flowtext.FlowTextView
@@ -25,7 +26,7 @@
         continuationView="@+id/tv3"
         android:maxLines="2"
         android:paddingBottom="5dip"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
     
     <ImageView
         android:layout_width="wrap_content"
